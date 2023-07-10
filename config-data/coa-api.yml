@@ -1,0 +1,16 @@
+server:
+  port: ${random.int(5100,5200)}
+  servlet:
+    context-path: /coa-api
+spring:
+  application:
+    name: coa-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/uady_db
+    username: root
+    password: A_$up3r_$3cr3t_K3y
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
